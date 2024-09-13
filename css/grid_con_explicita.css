@@ -1,0 +1,27 @@
+.grid_con_explicita {
+  display: grid;
+  height: 100vh;
+  gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 100px 1fr;
+  grid-template-areas:
+    "header--cont header--cont header--cont header--cont header--cont header--cont "
+    ". sidebar--izquierda content content sidebar--derecha .";
+}
+.header--cont {
+  grid-area: header--cont;
+  background-color: aquamarine;
+}
+
+.sidebar--izquierda {
+  grid-area: sidebar--izquierda;
+  background-color: aquamarine;
+}
+.sidebar--derecha {
+  grid-area: sidebar--derecha;
+  background-color: antiquewhite;
+}
+.content {
+  grid-area: content;
+  background-color: rgb(229, 53, 0);
+}
