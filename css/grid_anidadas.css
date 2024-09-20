@@ -1,0 +1,20 @@
+@import url(styles.css);
+.grid_anidadas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.sub_grid {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-row: 2/3;
+  grid-column: span 3;
+  background-color: aqua;
+}
+/* .item:nth-child(5) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-row: 2/6;
+} */

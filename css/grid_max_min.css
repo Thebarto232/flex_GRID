@@ -1,0 +1,12 @@
+@import url(styles.css);
+
+.grid_max-min {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 200px));
+  grid-template-columns: repeat(4, minmax(min-content, 300px));
+}
+/* .contenedor {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+} */

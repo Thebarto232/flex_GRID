@@ -1,0 +1,8 @@
+@import url(styles.css);
+.grid_responsive {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.item:nth-child(16) {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
